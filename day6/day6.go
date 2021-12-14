@@ -1,4 +1,4 @@
-package main
+package day6
 
 func NumberOfLanternFish(fishStates []int, days int) int {
 	current := []int{0, 0, 0, 0, 0, 0, 0, 0, 0}

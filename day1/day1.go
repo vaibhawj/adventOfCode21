@@ -1,4 +1,4 @@
-package main
+package day1
 
 func Part1(inputs []int) int {
 	var counter = 0
