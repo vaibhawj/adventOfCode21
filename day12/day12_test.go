@@ -33,3 +33,19 @@ func TestPossiblePaths_Real(t *testing.T) {
 		t.Errorf("got %d, expected %d", actual, expected)
 	}
 }
+
+func TestPossiblePaths_P2(t *testing.T) {
+	actual := PossiblePaths2("start-A\nstart-b\nA-c\nA-b\nb-d\nA-end\nb-end")
+	expected := 36
+	if actual != expected {
+		t.Errorf("got %d, expected %d", actual, expected)
+	}
+}
+
+func TestPossiblePaths2_Real(t *testing.T) {
+	actual := PossiblePaths2("HF-qu\nend-CF\nCF-ae\nvi-HF\nvt-HF\nqu-CF\nhu-vt\nCF-pk\nCF-vi\nqu-ae\nae-hu\nHF-start\nvt-end\nae-HF\nend-vi\nvi-vt\nhu-start\nstart-ae\nCS-hu\nCF-vt")
+	expected := 99448
+	if actual != expected {
+		t.Errorf("got %d, expected %d", actual, expected)
+	}
+}
