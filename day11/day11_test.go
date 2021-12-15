@@ -16,7 +16,7 @@ func TestTotalFlashes(t *testing.T) {
 func TestTotalFlashes_Real(t *testing.T) {
 	input := "8271653836\n7567626775\n2315713316\n6542655315\n2453637333\n1247264328\n2325146614\n2115843171\n6182376282\n2384738675"
 	actual := TotalFlashes(input, 100)
-	expected := 1562
+	expected := 3218
 	if actual != expected {
 		t.Errorf("got %d, expected %d", actual, expected)
 	}
